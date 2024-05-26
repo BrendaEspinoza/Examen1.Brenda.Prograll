@@ -1,0 +1,7 @@
+/Users/macbookpro/Desktop/Examen1.Brenda.Prograll/ApiPokemon/obj/Debug/net8.0/ApiPokemon.csproj.AssemblyReference.cache
+/Users/macbookpro/Desktop/Examen1.Brenda.Prograll/ApiPokemon/obj/Debug/net8.0/ApiPokemon.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbookpro/Desktop/Examen1.Brenda.Prograll/ApiPokemon/obj/Debug/net8.0/ApiPokemon.AssemblyInfoInputs.cache
+/Users/macbookpro/Desktop/Examen1.Brenda.Prograll/ApiPokemon/obj/Debug/net8.0/ApiPokemon.AssemblyInfo.cs
+/Users/macbookpro/Desktop/Examen1.Brenda.Prograll/ApiPokemon/obj/Debug/net8.0/ApiPokemon.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Desktop/Examen1.Brenda.Prograll/ApiPokemon/obj/Debug/net8.0/ApiPokemon.MvcApplicationPartsAssemblyInfo.cs
+/Users/macbookpro/Desktop/Examen1.Brenda.Prograll/ApiPokemon/obj/Debug/net8.0/ApiPokemon.MvcApplicationPartsAssemblyInfo.cache
