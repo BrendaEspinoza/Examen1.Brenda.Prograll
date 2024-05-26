@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using PokemonAPI.DAL;
+using NLayer.Architecture.Bussines.Services;
 using PokemonAPI.Models;
-using System;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace PokemonAPI.Controllers
 {
@@ -11,11 +8,11 @@ namespace PokemonAPI.Controllers
     [ApiController]
     public class PokemonController : ControllerBase
     {
-        private readonly PokeAPIClient _pokeAPIClient;
+        private readonly IPokemonApiService _pokemonApiService;
 
-        public PokemonController(PokeAPIClient pokeAPIClient)
+        public PokemonController(IPokemonApiService pokemonApiService)
         {
-            _pokeAPIClient = pokeAPIClient;
+            _pokemonApiService = pokemonApiService;
         }
 
         [HttpGet("{pokemonName}")]
@@ -23,10 +20,8 @@ namespace PokemonAPI.Controllers
         {
             try
             {
-                string pokemonData = await _pokeAPIClient.GetPokemonDataAsync(pokemonName);
-                var pokemonResponse = PokemonResponse.FromJson(pokemonData);
-
-                return Ok(pokemonResponse);
+                PokemonResponse pokemonData = await _pokemonApiService.GetPokemonData(pokemonName);
+                return Ok(pokemonData);
             }
             catch (HttpRequestException ex)
             {

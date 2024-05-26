@@ -1,5 +1,6 @@
-using DataAccess.Layer.FileRepositories;
 using Microsoft.OpenApi.Models;
+using NLayer.Architecture.Bussines.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pokemon API", Version = "v1" });
 });
 
+builder.Services.AddTransient<IPokemonApiService, PokemonApiService>();
 
 
 var app = builder.Build();
